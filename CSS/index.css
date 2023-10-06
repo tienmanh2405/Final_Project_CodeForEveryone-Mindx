@@ -79,7 +79,7 @@ section
 }
 .content
 {
-    width: 60%;
+    width: 50%;
     color: #fff;
     float: left;
 }
@@ -113,7 +113,7 @@ section
 }
 .login
 {
-    width: 40%;
+    width: 50%;
     float: left;
 }
 .login__form{
