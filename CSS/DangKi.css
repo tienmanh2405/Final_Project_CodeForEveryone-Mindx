@@ -6,92 +6,63 @@
     box-sizing: border-box;
     font-family: 'Poppins' , sans-serif;
 }
-body
-{   
-    width: 100%;
+.form__create{
+    width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(../IMG/background.png);
     background-position: center;
     background-size: contain;
-}
-.login
-{
-    width: 600px;
-    height: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
 }
-.sign-up h2
-{
+
+.form__name{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     margin-bottom: 50px;
 }
-.login .input
-{  
+.input{
 
-    width: 100%;
+    width: 80%;
     height: 30px;
-    margin-bottom: 30px;
-    margin-left: 60px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
-.input-mail 
-{
-    font-size: 20px;
-    width: 70%;
+.input__type{
+    font-size: 18px;
+    width: 100%;
     border: none;
     outline: none;
     background: transparent;
     border-bottom: 2px solid #fff; 
-    transition: .3s;
     color: #fff;
 }
-.input-mail:focus ~ label,
-.input-mail:valid ~ label
-{
-    top: -20px;
-    font-size: 15px;
-    color: #f8ece2;
-    border: none;
-}
-.input label
-{
-    position: relative;
-    left:-380px;
+.input label{
+    display: block;
+    text-align: left;
+    width: 100%;
     color: #fff;
 }
-.input i
-{
-    position: absolute;
-    right: 600px;
-    color: #fff;
+.check{
+    width: 80%;
+    height: 30px;
+    margin:30px auto;
 }
-.login .checkbox
-{
-    padding-left: 60px;
-    margin-bottom: 30px;
-    color: #fff;
+.button{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
-button
-{
-    font-size: 25px;
-    width: 70%;
-    margin-left: 60px;
-    font-weight: 500;
-    background-color: #fff;
-    color: black;
-    border: none;
-    outline: none;
+.button button{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
 }
-button:active
-{
-    font-size: 27px;
+button:active{
+    font-weight: bold;
 }
 .box p
 {
@@ -101,7 +72,7 @@ button:active
     font-weight: 600;
     color: #fff;
 }
-.login .icon
+.form__create .icon
 {
     margin: 20px 0;
     display: flex;
@@ -109,8 +80,11 @@ button:active
     font-size: 25px;
     padding-right: 40px;
 }
-.login .icon i
+.form__create .icon i
 {
     margin-left: 20px;
     color: #fff;
 }
+
+
+
