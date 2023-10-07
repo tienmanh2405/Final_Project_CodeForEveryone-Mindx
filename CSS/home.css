@@ -24,10 +24,12 @@
 .formpage__header img{
     height: 100px;
     width: auto;
+    margin-left: 30px;
 }
 .formpage__header--nav ul{
     list-style-type: none;
     overflow: hidden;
+    margin-right: 40px;
 }
 
 .formpage__header--nav li{
@@ -60,11 +62,11 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    border: 1px solid black;
     
 }
 .dropdown-content a:hover{
     color: white;
-    border: 1px solid black;
 }
 .dropdown:hover .dropdown-content{
     display: block;
