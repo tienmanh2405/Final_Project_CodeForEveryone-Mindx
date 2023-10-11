@@ -45,7 +45,7 @@ const checkconfirmPassword = (confirmPassword,password) => {
         alert("Invalid confirmPasswork");
         return false;
 }
-const kiemTraDangKi= () =>{
+const kiemTraDangKi = () =>{
         var first_name = document.getElementById("first-name").value;
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
@@ -62,11 +62,15 @@ const kiemTraDangKi= () =>{
                 password: password
             };
             localStorage.setItem('userData', JSON.stringify(userData));
-            console.log("1");
-            window.location.href="home.html";
-            console.log("2");
+            window.location.href="../HTML/home.html";
             
         }
         
-    }
+}
+const formbtn = document.getElementById("action");
+formbtn.addEventListener('submit',(e) => {
+    e.preventDefault();
+    kiemTraDangKi();
+});
+
 
