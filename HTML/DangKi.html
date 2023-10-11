@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/DangKi.css">
     <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Create account</title>
+
 </head>
 
 <body>
@@ -25,18 +27,18 @@
             </div>
             <div class="input">
                 <label for="password">Password</label>
-                <input type="text" id="password" class="input__type">
+                <input type="password" id="password" class="input__type">
             </div>
             <div class="input">
                 <label for="confirm-password">Confirm password</label>
-                <input type="text" id="confirm-password" class="input__type">
+                <input type="password" id="confirm-password" class="input__type">
             </div>
             <div class="check">
                 <input type="checkbox" id="check-box">
                 <label for="check-box">I agree to the terms</label>
             </div>
             <div class="button">
-                <button type="submit">CREATE</button>
+                <input type="submit" value="CREATE" onclick=kiemTraDangKi()>
             </div>
             <div class="box">
                 <p> or </p>
@@ -48,7 +50,7 @@
             </div>
         </form>
     </div>
-
+    <script src="../JS/main.js"></script>
 </body>
 
 </html>
