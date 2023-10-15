@@ -7,7 +7,7 @@ const kiemTraDangNhap = () =>{
         const userData = JSON.parse(checkLogin);
         if(userData.email === loginEmail && userData.password === loginPassword){
             alert("Successful login");
-            window.location.href="../HTML/About_Login.html";
+            window.location.href="../HTML/Home_Login.html";
         }
         else{
             alert("Email or password error!");
