@@ -55,15 +55,14 @@ const kiemTraDangKi = () =>{
         checkPassword(password);
         checkconfirmPassword(confirmPassword,password);
         if ( checkUser(first_name) && checkEmail(email) && checkPassword(password) && checkconfirmPassword(confirmPassword, password)) {
-            // Lưu thông tin đăng ký vào localStorage
             const userData = {
                 first_name: first_name,
                 email: email,
                 password: password
             };
+            // Lưu thông tin đăng ký vào localStorage
             localStorage.setItem('userData', JSON.stringify(userData));
             window.location.href="../HTML/home.html";
-            
         }
         
 }

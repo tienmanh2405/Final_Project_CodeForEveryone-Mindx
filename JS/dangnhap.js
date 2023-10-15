@@ -6,8 +6,8 @@ const kiemTraDangNhap = () =>{
     {
         const userData = JSON.parse(checkLogin);
         if(userData.email === loginEmail && userData.password === loginPassword){
-
-            alert("Đăng nhập thành công");
+            alert("Successful login");
+            window.location.href="../HTML/About_Login.html";
         }
         else{
             alert("Email or password error!");
@@ -16,3 +16,8 @@ const kiemTraDangNhap = () =>{
     else
         alert("Error! Not member!");
 }
+const formLogin = document.getElementById("formLogin");
+formLogin.addEventListener('submit',(e) => {
+    e.preventDefault();
+    kiemTraDangNhap();
+});
